@@ -40,8 +40,33 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
-            //return "No Error" if XML is valid. Otherwise, return the desired exception message.
+            string xmlContent = DownloadContent(xmlUrl);
+            string xsdContent = DownloadContent(xsdUrl);
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.ValidationType = ValidationType.Schema;
+            StringReader xsdTextReader = new StringReader(xsdContent);
+            XmlReader xsdReader = XmlReader.Create(xsdTextReader);
+            settings.Schemas.Add(null, xsdReader);
+            System.Text.StringBuilder errors = new System.Text.StringBuilder(); 
+            settings.ValidationEventHandler += (sender, e) =>
+            {
+                errors.AppendLine(e.Message);
+            };
+            StringReader xmlTextReader = new StringReader(xmlContent);
+            XmlReader xmlReader = XmlReader.Create(xmlTextReader, settings);
+            while(xmlReader.Read())
+            {
+            }
+            if(errors.Length == 0)
+            {
+                return "No errors are found";
+            }
+            else
+            {
+                return errors.ToString();
+            }
         }
+
 
         public static string Xml2Json(string xmlUrl)
         {
