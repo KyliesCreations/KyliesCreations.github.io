@@ -1,10 +1,14 @@
-Yosemite National Park
-Death Valley National Park
-Sequoia National Park
-Kings Canyon National Park
-Redwood National and State Parks
-Joshua Tree National Park
-Lassen Volcanic National Park
-Channel Islands National Park
-Pinnacles National Park
-Point Reyes National Seashore 
+<NationalParks>
+<NationalPark "unbounded">
+  <Name>Grand Canyon</Name>
+  <Name>Yosemite National Park</Name>
+  <Name>Death Valley National Park</Name>
+  <Name>Sequoia National Park</Name>
+  <Name>Kings Canyon National Park</Name>
+  <Name>Redwood National and State Parks</Name>
+  <Name>Joshua Tree National Park</Name>
+  <Name>Lassen Volcanic National Park</Name>
+  <Name>Channel Islands National Park</Name>
+  <Name>Pinnacles National Park</Name>
+</NationalPark>
+</NationalParks>
