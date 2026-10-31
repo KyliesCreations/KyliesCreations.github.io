@@ -1,14 +1,35 @@
 <NationalParks>
-<NationalPark "unbounded">
-  <Name>Grand Canyon</Name>
-  <Name>Yosemite National Park</Name>
-  <Name>Death Valley National Park</Name>
-  <Name>Sequoia National Park</Name>
-  <Name>Kings Canyon National Park</Name>
-  <Name>Redwood National and State Parks</Name>
-  <Name>Joshua Tree National Park</Name>
-  <Name>Lassen Volcanic National Park</Name>
-  <Name>Channel Islands National Park</Name>
-  <Name>Pinnacles National Park</Name>
+<NationalPark>
+<Name>Grand Canyon</Name>
+  <Phone>928-638-7486</Phone>
+  <Phone>888-297-2757</Phone>
+  <Phone>866-499-2574</Phone>
+</NationalPark>
+<NationalPark>
+<Name>Yosemite National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Death Valley National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Sequoia National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Kings Canyon National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Redwood National and State Parks</Name>
+</NationalPark>
+<NationalPark>
+<Name>Joshua Tree National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Lassen Volcanic National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Channel Islands National Park</Name>
+</NationalPark>
+<NationalPark>
+<Name>Pinnacles National Park</Name>
 </NationalPark>
 </NationalParks>
