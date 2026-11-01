@@ -19,7 +19,7 @@ namespace ConsoleApp1
 
     public class Submission
     {
-        public static string xmlURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xml";
+        public static string xmlURL = "NationalParks.xml";
         public static string xmlErrorURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xml";
         public static string xsdURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xsd";
 
