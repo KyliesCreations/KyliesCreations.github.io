@@ -54,9 +54,16 @@ namespace ConsoleApp1
             };
             StringReader xmlTextReader = new StringReader(xmlContent);
             XmlReader xmlReader = XmlReader.Create(xmlTextReader, settings);
+            try{
             while(xmlReader.Read())
             {
             }
+            }
+            catch (XmlException ex)
+            {
+                errors.AppendLine(ex.Message);
+            }
+
             if(errors.Length == 0)
             {
                 return "No errors are found";
@@ -70,6 +77,11 @@ namespace ConsoleApp1
 
         public static string Xml2Json(string xmlUrl)
         {
+            string xmlContent = DownloadContent(xmlUrl);
+            XmlDocument document = new XmlDocument();
+            document.LoadXml(xmlContent);
+            string jsonText = JsonConvert.SerializeXmlNode(document);
+            return jsonText;
             // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
         }
 
