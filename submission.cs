@@ -21,7 +21,7 @@ namespace ConsoleApp1
     {
         public static string xmlURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xml";
         public static string xmlErrorURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xml";
-        public static string xsdURL = "Your XSD URL";
+        public static string xsdURL = "https://github.com/KyliesCreations/KyliesCreations.github.io/blob/main/NationalParks.xsd";
 
         public static void Main(string[] args)
         {
