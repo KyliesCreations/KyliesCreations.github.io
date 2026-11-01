@@ -25,7 +25,7 @@
   
 <NationalPark>
 <Name>Death Valley National Park</Name>
-  <Phone>	760-786-3200</Phone>
+  <Phone>760-786-3200</Phone>
   <Address NearestAirport="Furnace Creek Airport">
     <Number>579</Number>
     <Street>PO Box</Street>
@@ -120,7 +120,7 @@
     <Street>PO Box</Street>
     <City>Crater Lake</City>
     <State>OR</State>
-    <Zip>	97604</Zip>
+    <Zip>97604</Zip>
     </Address>
   </NationalPark>
 </NationalParks>
